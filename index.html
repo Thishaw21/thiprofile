@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Information</title>
+    <title>Wibu Style</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,9 +14,21 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            background: linear-gradient(135deg, #3498db, #e74c3c);
-            color: #fff;
+            min-height: 100vh;
+            color: #000; /* Đổi màu chữ thành đen */
+            overflow: hidden;
+            background: url('anh1.gif'); /* Thay đổi đường dẫn hình ảnh của bạn */
+            background-size: cover;
+            animation: backgroundAnimation 30s linear infinite;
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
         }
 
         h1 {
@@ -40,14 +53,16 @@
         ul {
             list-style: none;
             padding: 0;
+            display: flex;
+            justify-content: center;
         }
 
         li {
-            margin: 5px 0;
+            margin: 5px;
         }
 
         a {
-            color: #ffd700;
+            color: #000; /* Đổi màu chữ của các liên kết thành đen */
             text-decoration: none;
         }
 
@@ -55,15 +70,15 @@
             text-decoration: underline;
         }
 
-        audio {
-            width: 80%;
-            margin-top: 20px;
+        .social-icons img {
+            width: 30px;
+            height: 30px;
         }
     </style>
 </head>
 <body>
 
-    <h1>Personal Information</h1>
+    <h1>Profile</h1>
 
     <!-- Add Avatar -->
     <img src="anh.jpg" alt="Avatar of Pham An Thi">
@@ -81,10 +96,10 @@
     </ul>
 
     <h2>Social Media</h2>
-    <ul>
-        <li><a href="https://www.facebook.com/binayer" target="_blank">Facebook</a></li>
-        <li><a href="https://www.linkedin.com/in/ph%E1%BA%A1m-an-thi-b1a810258/" target="_blank">Linkedin</a></li>
-        <li><a href="https://github.com/Thishaw21" target="_blank">Github</a></li>
+    <ul class="social-icons">
+        <li><a href="https://www.facebook.com/binayer" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/ph%E1%BA%A1m-an-thi-b1a810258/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/Thishaw21" target="_blank"><i class="fab fa-github"></i></a></li>
         <!-- Add more social media if needed -->
     </ul>
 
@@ -97,3 +112,4 @@
 
 </body>
 </html>
+
