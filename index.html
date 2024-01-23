@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #3498db, #e74c3c);
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        img {
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        p, ul {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        audio {
+            width: 80%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Personal Information</h1>
+
+    <!-- Add Avatar -->
+    <img src="anh.jpg" alt="Avatar of Pham An Thi">
+
+    <p><strong>Name:</strong> Pham An Thi</p>
+    <p><strong>Birthdate:</strong> 07/05/2001</p>
+
+    <h2>Hobbies</h2>
+    <ul>
+        <li>Playing football</li>
+        <li>Listening to music</li>
+        <li>Watching movies</li>
+        <li>Coding</li>
+        <!-- Add more hobbies if needed -->
+    </ul>
+
+    <h2>Social Media</h2>
+    <ul>
+        <li><a href="https://www.facebook.com/binayer" target="_blank">Facebook</a></li>
+        <li><a href="https://www.linkedin.com/in/ph%E1%BA%A1m-an-thi-b1a810258/" target="_blank">Linkedin</a></li>
+        <li><a href="https://github.com/Thishaw21" target="_blank">Github</a></li>
+        <!-- Add more social media if needed -->
+    </ul>
+
+    <h2>Automatic Music Player</h2>
+    <audio controls autoplay>
+        <source src="zing.mp3" type="audio/mp3">
+        <!-- Change the link to your preferred song -->
+        Your browser does not support the audio tag.
+    </audio>
+
+</body>
+</html>
