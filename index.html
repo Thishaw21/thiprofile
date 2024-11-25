@@ -102,15 +102,21 @@
     </ul>
 
     <h2>Automatic Music Player</h2>
-    <audio controls autoplay loop>
+    <audio id="audio-player" autoplay loop>
         <source src="zing.mp3" type="audio/mp3">
         Your browser does not support the audio tag.
     </audio>
 
     <script>
-        // Kiểm tra autoplay
-        const audioElement = document.querySelector("audio");
-        audioElement.muted = false; // Tắt muted sau khi tải trang
+        // Đảm bảo nhạc tự động phát sau khi trang tải
+        window.addEventListener('load', () => {
+            const audioPlayer = document.getElementById('audio-player');
+            // Bỏ muted để nhạc phát
+            audioPlayer.muted = false;
+            audioPlayer.play().catch(error => {
+                console.log("Autoplay bị chặn. Yêu cầu người dùng tương tác để phát nhạc:", error);
+            });
+        });
     </script>
 
 </body>
